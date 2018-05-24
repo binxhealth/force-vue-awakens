@@ -1,0 +1,5 @@
+node_modules
+dist
+cypress/videos
+.vscode
+.DS_Store
