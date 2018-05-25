@@ -48,3 +48,9 @@ Run Cypress interactive GUI:
 ```sh
 npx cypress open
 ```
+
+## Acknowledgement
+
+* Data is from [The Star Wars API (SWAPI)](https://swapi.co/).
+* Images are from [Star Wars: A Visual Guide](https://starwars-visualguide.com).
+* This is a sequel to [force-vue](https://github.com/alexkramer/force-vue).
