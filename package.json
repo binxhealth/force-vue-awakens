@@ -3,7 +3,6 @@
   "name": "force-vue-awakens",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest",
@@ -20,6 +19,7 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@appjumpstart/launch": "^2.0.0",
     "@vue/test-utils": "^1.0.0-beta.16",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
