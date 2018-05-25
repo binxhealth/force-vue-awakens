@@ -1,8 +1,11 @@
 version: 2
 jobs:
   build:
+    environment:
+      # NODE_ENV: production
+
     docker:
-      - image: cypress/base:8
+      - image: cypress/base:10
 
     working_directory: ~/repo
 
@@ -12,19 +15,16 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-{{ checksum "package-lock.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: npm ci
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
 
       - run: npm run lint
-
-      - run: npm test
-
 
