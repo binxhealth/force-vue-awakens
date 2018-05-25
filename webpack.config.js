@@ -28,9 +28,8 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    ...(process.env.WEBPACK_SERVE ? [
-      new HtmlWebpackPlugin({ template: './src/index.html' })
-    ] : [
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    ...(process.env.WEBPACK_SERVE ? [] : [
       new CleanWebpackPlugin(['dist'])
     ])
   ]
