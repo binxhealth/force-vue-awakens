@@ -1,9 +1,14 @@
 # force-vue-awakens
->
+> Every generation has a story.
 
-## Guidelines:
+## Contributing
 
 * Code style: [StandardJS](https://standardjs.com/)
+* Fork the repository, commit to master, add `#<issue number>` to commit
+  messages, and create a single pull request (even for multiple issues).
+* Add [Cypress](https://www.cypress.io/) and/or
+  [Jest](https://facebook.github.io/jest/en/) tests where appropriate.
+* Use comments thoughtfully.
 
 ## Setup
 
@@ -20,7 +25,7 @@ Run all tests:
 npm test
 ```
 
-Run only [Jest](https://facebook.github.io/jest/en/) tests:
+Run only Jest tests:
 
 ```sh
 npm run test:unit
@@ -32,7 +37,7 @@ Run a sepcific Jest test:
 npm run test:unit -- tests/home.test.js
 ```
 
-Run only [Cypress](https://www.cypress.io/) tests:
+Run only Cypress tests:
 
 ```sh
 npm run test:e2e
