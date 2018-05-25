@@ -1,5 +1,5 @@
 # force-vue-awakens
-> Every generation has a story.
+> Every generation has a story
 
 ## Contributing
 
