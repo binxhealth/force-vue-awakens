@@ -12,7 +12,6 @@ export default {
     async list ({ commit }, page = 1) {
       const response = await fetch('https://swapi.co/api/people')
       const { results } = await response.json()
-      console.log('results', results)
       if (response.ok) {
         commit('results', results)
       } else {
