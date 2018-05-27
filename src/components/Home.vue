@@ -10,8 +10,7 @@
           v-for="(person, id) in results"
           :to="`/people/${id}`"
           :key="id"
-          class="card m-2"
-          style="width: 12rem;">
+          class="card m-2 card-container">
 
           <img
             :src="`https://starwars-visualguide.com/assets/img/characters/${id + 1}.jpg`"
@@ -49,3 +48,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .card-container {
+    width: 12rem;
+  }
+</style>
