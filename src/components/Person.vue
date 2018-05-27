@@ -5,18 +5,44 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 import store from '@/store'
-
 export default {
   async beforeRouteEnter (to, from, next) {
-    await store.dispatch('people/get', to.params.id)
-    next()
+    const action = await store.dispatch('people/getPerson', to.params.id)
+    if(action.ok) {
+      console.log(action.json())
+      next()
+    } else {
+      // If the response from the API is not ok, then we redirect to 404 page 
+      next (
+        {
+        path: '404'
+        }
+      )
+    }
   },
   async beforeRouteUpdate (to, from, next) {
-    await store.dispatch('people/get', to.params.id)
+   const action = await store.dispatch('people/getPerson', to.params.id)
+   if(action.ok) {
     next()
+   } else {
+     next(
+       {
+         path: '/'
+       }
+     )
+     this.$notify({
+      group: 'notifs',
+      title: 'Error',
+      type: 'warn',
+      text: 'Person ' + to.params.id + ' not found.'
+     })
+   }
+  },
+  methods: {
+    ...mapActions('getPerson', ['people/getPerson'])
   },
   computed: {
     ...mapGetters('people', ['person'])

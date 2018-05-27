@@ -8,7 +8,7 @@
       <div class="d-flex flex-wrap">
         <router-link
           v-for="(person, id) in results"
-          :to="`/people/${id}`"
+          :to="`/people/${id + 1}`"
           :key="id"
           class="card m-2"
           style="width: 12rem;">

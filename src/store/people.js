@@ -28,6 +28,20 @@ export default {
         // If the response is not OK, log the response to the console.
         console.error(response)
       }
+    },
+    async getPerson ({ commit }, id) {
+      // Fetch People from SWAPI and await the response.
+      const apiUrl = 'https://swapi.co/api/people/'
+
+      return new Promise((resolve, reject) => {
+        fetch(apiUrl + id)
+          .then(function (response) {
+            resolve(response)
+          })
+          .catch(function (error) {
+            reject(error)
+          })
+      })
     }
   }
 }
