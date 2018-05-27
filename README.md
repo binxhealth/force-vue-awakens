@@ -1,5 +1,5 @@
 # force-vue-awakens
-> Every generation has a story.
+> Every generation has a story
 
 ## Contributing
 
@@ -31,6 +31,7 @@ application:
    HTTP request API that is
    [polyfilled](https://en.wikipedia.org/wiki/Polyfill_(programming)) by
    [Unfetch]( https://npm.im/unfetch).
+5. [Bootstrap](http://getbootstrap.com): Style toolkit.
 
 ## Testing
 

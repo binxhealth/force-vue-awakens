@@ -2,7 +2,7 @@
   "private": true,
   "name": "force-vue-awakens",
   "version": "1.0.0",
-  "description": "",
+  "description": "Every generation has a story",
   "scripts": {
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest",
