@@ -5,7 +5,7 @@
 
       <h2>People</h2>
 
-      <div class="d-flex flex-wrap">
+      <div class="d-flex flex-wrap justify-content-center">
         <router-link
           v-for="(person, id) in results"
           :to="`/people/${id}`"
@@ -15,7 +15,7 @@
           <img
             :src="`https://starwars-visualguide.com/assets/img/characters/${id + 1}.jpg`"
             class="card-img-top"
-            alt="Card image cap">
+            alt="">
 
           <div class="card-body">
 
