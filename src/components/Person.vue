@@ -4,7 +4,7 @@
       <h1>{{results.name}}</h1>
       <h4>Biography</h4>
       <ul class="list-group pb-3" id="bio">
-          <li class="list-group-item">Homeworld: {{ results.homeworld }}</li>
+          <li class="list-group-item">Homeworld: <a :href="results.homeworld.url">{{ results.homeworld.name }}</a></li>
           <li class="list-group-item">Birth year: {{ results.birth_year }}</li>
           <li class="list-group-item">Height: {{ results.height }}</li>
           <li class="list-group-item">Mass: {{ results.mass }}</li>

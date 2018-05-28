@@ -48,8 +48,9 @@ export default {
             return response.json()
           }
         })
-      const homeworld = await renderAttributeName(results.homeworld)
-      results.homeworld = homeworld
+      const homeworldUrl = results.homeworld
+      const homeworld = await renderAttributeName(homeworldUrl)
+      results.homeworld = { 'name': homeworld, 'url': homeworldUrl }
 
       const species = await renderAttributeName(results.species[0])
       results.species = species
