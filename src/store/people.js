@@ -23,7 +23,6 @@ export default {
       const { results } = await response.json()
       if (response.ok) {
         // If the response is OK commit the data to the store.
-        console.log('RESULTS: ' + results)
         commit('results', results)
       } else {
         // If the response is not OK, log the response to the console.
@@ -40,10 +39,9 @@ export default {
             if (response.ok) {
               response.json()
                 .then(results => {
-                  console.log({results})
                   commit('results', results)
-                  resolve(response)
                 })
+              resolve(response)
             }
           })
           .catch(function (error) {
@@ -54,7 +52,6 @@ export default {
   },
   getters: {
     getResults: state => {
-      console.log(state.results)
       return state.results
     }
   }

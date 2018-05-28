@@ -7,7 +7,12 @@
       <li class="list-group-item">Height: {{ results.height }}</li>
       <li class="list-group-item">Mass: {{ results.mass }}</li>
       <li class="list-group-item">Eye color: {{ results.eye_color }}</li>
-      <li class="list-group-item">Skin color: {{ results.skin_color }}</li>  
+      <li class="list-group-item">Skin color: {{ results.skin_color }}</li>
+    </ul>
+    <ul class="list-group">
+      <li v-for="vehicle in results.vehicles" class="list-group-item">
+        {{vehicle}}
+      </li>
     </ul>
     <div class="row pt-3 pl-3">
           <router-link
@@ -44,36 +49,7 @@ export default {
   async beforeRouteUpdate (to, from, next) {
     await store.dispatch('people/getPerson', to.params.id)
     next()
-    // console.log(action)
-    // console.log("Store.state: " + store.state.people.results)
-    // if(action.ok) {
-    //   // const person = getResults()
-    //   // console.log(person)
-    //   //attributes.name = json.name
-    //   //next(vm => vm.updatePersonAttributes(action))
-    //   next()
-    // } else {
-    // next({
-    //   path: '/'
-    // })
-    // this.$notify({
-    //   group: 'notifs',
-    //   title: 'Error',
-    //   type: 'warn',
-    //   text: 'Person ' + to.params.id + ' not found.'
-    // })
-   // }
   },
-  // data: function() {
-  //   return {
-  //     attributes: {
-  //       name: ''
-  //     }
-  //   }
-  // },
-  // methods: {
-  //   ...mapActions('attributes'),
-  // },
   computed: {
     ...mapState('people', ['results'])
   }
