@@ -47,6 +47,8 @@ import store from '@/store'
 export default {
   async beforeRouteEnter (to, from, next) {
     const resp = await store.dispatch('people/getPerson', to.params.id)
+    // If we receive null back as a response, we redirect back to the home page
+    // due to the invalid request
     if(resp === null) {
       next('/')
     } else {
@@ -55,6 +57,8 @@ export default {
   },
   async beforeRouteUpdate (to, from, next) {
     const resp = await store.dispatch('people/getPerson', to.params.id)
+    // Sends a quick notification that the request failed and
+    // then redirects back to the home page
     if(resp === null) {
       this.$notify({
         group: 'notifs',

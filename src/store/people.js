@@ -54,11 +54,14 @@ export default {
       }
       const homeworldUrl = results.homeworld
       const homeworld = await renderAttributeName(homeworldUrl)
+
+      // saving in this format for easy template rendering
       results.homeworld = { 'name': homeworld, 'url': homeworldUrl }
 
       const species = await renderAttributeName(results.species[0])
       results.species = species
 
+      // Only fetch the vehicle names from the API if the person has vehicles
       if (results.vehicles !== undefined || results.vehicles.length !== 0) {
         let vehicles = []
         for (var i = 0; i < results.vehicles.length; i++) {
@@ -69,6 +72,7 @@ export default {
         results.vehicles = vehicles
       }
 
+      // Only fetch the starship names from the API if the person has starships
       if (results.starships !== undefined || results.starships.length !== 0) {
         let starships = []
         for (var j = 0; j < results.starships.length; j++) {
