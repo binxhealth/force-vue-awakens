@@ -23,6 +23,7 @@ export default {
       const { results } = await response.json()
       if (response.ok) {
         // If the response is OK commit the data to the store.
+        console.log('RESULTS: ' + results)
         commit('results', results)
       } else {
         // If the response is not OK, log the response to the console.
@@ -31,17 +32,30 @@ export default {
     },
     async getPerson ({ commit }, id) {
       // Fetch People from SWAPI and await the response.
-      const apiUrl = 'https://swapi.co/api/people/'
+      const apiUrl = 'https://swapi.co/api/people/' + id
 
       return new Promise((resolve, reject) => {
-        fetch(apiUrl + id)
+        fetch(apiUrl)
           .then(function (response) {
-            resolve(response)
+            if (response.ok) {
+              response.json()
+                .then(results => {
+                  console.log({results})
+                  commit('results', results)
+                  resolve(response)
+                })
+            }
           })
           .catch(function (error) {
             reject(error)
           })
       })
+    }
+  },
+  getters: {
+    getResults: state => {
+      console.log(state.results)
+      return state.results
     }
   }
 }
