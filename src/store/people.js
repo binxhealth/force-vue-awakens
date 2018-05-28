@@ -2,6 +2,19 @@ const initialState = () => ({
   results: []
 })
 
+// Helper function to fetch links from the API and return name
+// of starship/planet/vehicle/etc.
+async function renderAttributeName (url) {
+  const results = await fetch(url)
+    .then(function (response) {
+      if (response.ok) {
+        console.log(response)
+        return response.json()
+      }
+    })
+  return results.name
+}
+
 // Export the module so it can be included in the main store.
 export default {
   // This module is namespaced so that it is a little more self-contained:
@@ -35,6 +48,38 @@ export default {
             return response.json()
           }
         })
+      const homeworld = await renderAttributeName(results.homeworld)
+      results.homeworld = homeworld
+
+      const species = await renderAttributeName(results.species[0])
+      results.species = species
+
+      if (results.vehicles !== undefined || results.vehicles.length !== 0) {
+        console.log('has vehicles')
+        let vehicles = []
+        for (var i = 0; i < results.vehicles.length; i++) {
+          var vehicleUrl = results.vehicles[i]
+          console.log('vehicle url: ' + vehicleUrl)
+          const vehicleName = await renderAttributeName(vehicleUrl)
+          console.log('vehicle name: ' + vehicleName)
+          vehicles[i] = {'name': vehicleName, 'url': vehicleUrl}
+        }
+        results.vehicles = vehicles
+      }
+
+      if (results.starships !== undefined || results.starships.length !== 0) {
+        console.log('has vehicles')
+        let starships = []
+        for (var j = 0; j < results.starships.length; j++) {
+          var starshipUrl = results.starships[j]
+          console.log('vehicle url: ' + starshipUrl)
+          const starshipName = await renderAttributeName(starshipUrl)
+          console.log('vehicle name: ' + starshipName)
+          starships[j] = {'name': starshipName, 'url': starshipUrl}
+        }
+        results.starships = starships
+      }
+
       commit('results', results)
     }
   },

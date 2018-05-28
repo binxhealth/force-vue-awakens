@@ -16,13 +16,13 @@
       <ul class="list-group pb-3">
         <h4 v-if="results.starships===undefined || results.starships.length !== 0">Starships</h4> <!-- Only show starship if person has starships -->
         <li v-for="starship in results.starships" class="list-group-item">
-          <a :href="starship">{{ starship }}</a>
+          <a :href="starship.url">{{ starship.name }}</a>
         </li>
       </ul>
       <ul class="list-group">
         <h4 v-if="results.vehicles===undefined || results.vehicles.length !== 0">Vehicles</h4> <!-- Only show vehicles if person has vehicles -->
         <li v-for="vehicle in results.vehicles" class="list-group-item">
-          <a :href="vehicle">{{ vehicle }}</a>
+          <a :href="vehicle.url">{{ vehicle.name }}</a>
         </li>
       </ul>
       <div class="row pt-3 pl-3">
@@ -44,19 +44,6 @@ export default {
   async beforeRouteEnter (to, from, next) {
     await store.dispatch('people/getPerson', to.params.id)
     next()
-    // if(action.ok) {
-    //   // const person = getResults
-    //   // attributes.name = json.name
-    //   // (vm => vm.updatePersonAttributes(action))
-    //   next()
-    // } else {
-    //   // If the response from the API is not ok, then we redirect to 404 page 
-    //   next (
-    //     {
-    //     path: '404'
-    //     }
-    //   )
-    // }
   },
   async beforeRouteUpdate (to, from, next) {
     await store.dispatch('people/getPerson', to.params.id)
@@ -64,6 +51,6 @@ export default {
   },
   computed: {
     ...mapState('people', ['results'])
-  }
+  },
 }
 </script>
