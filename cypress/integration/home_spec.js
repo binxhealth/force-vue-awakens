@@ -14,3 +14,9 @@ describe('People', () => {
     cy.visit('/#/people/1')
   })
 })
+
+describe('People', () => {
+  it('should handle bad person request', () => {
+    cy.visit('/#/people/41234')
+  })
+})
