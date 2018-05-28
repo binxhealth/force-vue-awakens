@@ -1,24 +1,27 @@
 <template>
   <div class="container">
-    <h1>{{results.name}}</h1>
-    
-    <ul class="list-group">
-      <li class="list-group-item">Birth year: {{ results.birth_year }}</li>
-      <li class="list-group-item">Height: {{ results.height }}</li>
-      <li class="list-group-item">Mass: {{ results.mass }}</li>
-      <li class="list-group-item">Eye color: {{ results.eye_color }}</li>
-      <li class="list-group-item">Skin color: {{ results.skin_color }}</li>
-    </ul>
-    <ul class="list-group">
-      <li v-for="vehicle in results.vehicles" class="list-group-item">
-        {{vehicle}}
-      </li>
-    </ul>
-    <div class="row pt-3 pl-3">
-          <router-link
-            :to="`/`">
-          <button>Return home</button>
-          </router-link>
+      <div class="card p-3">
+      <h1>{{results.name}}</h1>
+      <h4>Biography</h4>
+      <ul class="list-group pb-3" id="bio">
+          <li class="list-group-item">Birth year: {{ results.birth_year }}</li>
+          <li class="list-group-item">Height: {{ results.height }}</li>
+          <li class="list-group-item">Mass: {{ results.mass }}</li>
+          <li class="list-group-item">Eye color: {{ results.eye_color }}</li>
+          <li class="list-group-item">Skin color: {{ results.skin_color }}</li>
+        </ul>
+      <ul class="list-group">
+        <h4 v-if="results.vehicles.length !== 0">Vehicles</h4> <!-- Only show vehicles if person has vehicles -->
+        <li v-for="vehicle in results.vehicles" class="list-group-item">
+          <a :href="vehicle">{{ vehicle }}</a>
+        </li>
+      </ul>
+      <div class="row pt-3 pl-3">
+            <router-link
+              :to="`/`">
+            <button>Return home</button>
+            </router-link>
+      </div>
     </div>
   </div>
 </template>
