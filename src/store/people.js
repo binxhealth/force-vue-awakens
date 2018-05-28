@@ -8,7 +8,6 @@ async function renderAttributeName (url) {
   const results = await fetch(url)
     .then(function (response) {
       if (response.ok) {
-        console.log(response)
         return response.json()
       }
     })
@@ -46,8 +45,13 @@ export default {
         .then(function (response) {
           if (response.ok) {
             return response.json()
+          } else {
+            return null
           }
         })
+      if (results === null) {
+        return null
+      }
       const homeworldUrl = results.homeworld
       const homeworld = await renderAttributeName(homeworldUrl)
       results.homeworld = { 'name': homeworld, 'url': homeworldUrl }
@@ -56,32 +60,27 @@ export default {
       results.species = species
 
       if (results.vehicles !== undefined || results.vehicles.length !== 0) {
-        console.log('has vehicles')
         let vehicles = []
         for (var i = 0; i < results.vehicles.length; i++) {
           var vehicleUrl = results.vehicles[i]
-          console.log('vehicle url: ' + vehicleUrl)
           const vehicleName = await renderAttributeName(vehicleUrl)
-          console.log('vehicle name: ' + vehicleName)
           vehicles[i] = {'name': vehicleName, 'url': vehicleUrl}
         }
         results.vehicles = vehicles
       }
 
       if (results.starships !== undefined || results.starships.length !== 0) {
-        console.log('has vehicles')
         let starships = []
         for (var j = 0; j < results.starships.length; j++) {
           var starshipUrl = results.starships[j]
-          console.log('vehicle url: ' + starshipUrl)
           const starshipName = await renderAttributeName(starshipUrl)
-          console.log('vehicle name: ' + starshipName)
           starships[j] = {'name': starshipName, 'url': starshipUrl}
         }
         results.starships = starships
       }
 
       commit('results', results)
+      return results
     }
   },
   getters: {

@@ -1,9 +1,10 @@
 <template>
   <div class="container">
-      <div class="card p-3">
+      <!--Only renders template if given results.-->
+      <div class="card p-3" v-if="results !== undefined || results.length !== 0">
       <h1>{{results.name}}</h1>
       <h4>Biography</h4>
-      <ul class="list-group pb-3" id="bio">
+      <ul class="list-group pb-3" id="bio" >
           <li class="list-group-item">Homeworld: <a :href="results.homeworld.url">{{ results.homeworld.name }}</a></li>
           <li class="list-group-item">Birth year: {{ results.birth_year }}</li>
           <li class="list-group-item">Height: {{ results.height }}</li>
@@ -32,6 +33,9 @@
             </router-link>
       </div>
     </div>
+    <div class="row" v-else>
+      <p>uh oh nothing to show here</p>
+    </div>
   </div>
 </template>
 
@@ -42,12 +46,26 @@ import store from '@/store'
 
 export default {
   async beforeRouteEnter (to, from, next) {
-    await store.dispatch('people/getPerson', to.params.id)
-    next()
+    const resp = await store.dispatch('people/getPerson', to.params.id)
+    if(resp === null) {
+      next('/')
+    } else {
+      next()
+    }
   },
   async beforeRouteUpdate (to, from, next) {
-    await store.dispatch('people/getPerson', to.params.id)
-    next()
+    const resp = await store.dispatch('people/getPerson', to.params.id)
+    if(resp === null) {
+      this.$notify({
+        group: 'notifs',
+        title: 'Error: ' + 'invalid path for a person',
+        text: 'Taking you back home.',
+        type: 'warn'
+      });
+      next('/')
+    } else {
+      next()
+    }
   },
   computed: {
     ...mapState('people', ['results'])
