@@ -1,4 +1,9 @@
+import cachedFetch from '../util/cachedFetch'
+
 const initialState = () => ({
+  page: 1,
+  next: null,
+  previous: null,
   results: []
 })
 
@@ -11,19 +16,27 @@ export default {
   state: initialState,
   // https://vuex.vuejs.org/guide/mutations.html
   mutations: {
-    results: (state, results = []) => (state.results = results)
+    // Save results and next/previous links to the store
+    results: (state, response) => {
+      state.results = response.results
+      state.next = response.next
+      state.previous = response.previous
+    },
+    // Update the current page number
+    page: (state, page) => (state.page = page)
   },
   // https://vuex.vuejs.org/guide/actions.html
   actions: {
-    async list ({ commit }, page = 1) {
+    // This action takes state to use the current page as a default value
+    async list ({ commit, state }, page = state.page) {
       // Fetch People from SWAPI and await the response.
-      const response = await fetch('https://swapi.co/api/people')
-      // Parse the JSON string returned in the response into a JavaScript
-      // object and destructure the results property out of that object.
-      const { results } = await response.json()
+
+      const response = await cachedFetch('https://swapi.co/api/people/?page=' + page)
       if (response.ok) {
-        // If the response is OK commit the data to the store.
-        commit('results', results)
+        // If the response is valid, parse the JSON string and commit the result
+        commit('results', await response.json())
+        // Commit the new page number
+        commit('page', page)
       } else {
         // If the response is not OK, log the response to the console.
         console.error(response)
