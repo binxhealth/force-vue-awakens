@@ -36,31 +36,31 @@ application:
 
 Run all tests:
 
-```sh
+```
 npm test
 ```
 
 Run only Jest tests:
 
-```sh
+```
 npm run test:unit
 ```
 
 Run a sepcific Jest test:
 
-```sh
+```
 npm run test:unit -- tests/home.test.js
 ```
 
 Run only Cypress tests:
 
-```sh
+```
 npm run test:e2e
 ```
 
 Run Cypress interactive GUI:
 
-```sh
+```
 npx cypress open
 ```
 
