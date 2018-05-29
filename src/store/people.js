@@ -1,3 +1,5 @@
+import cachedFetch from '../util/cachedFetch'
+
 const initialState = () => ({
   page: 1,
   next: null,
@@ -28,7 +30,8 @@ export default {
     // This action takes state to use the current page as a default value
     async list ({ commit, state }, page = state.page) {
       // Fetch People from SWAPI and await the response.
-      const response = await fetch('https://swapi.co/api/people/?page=' + page)
+
+      const response = await cachedFetch('https://swapi.co/api/people/?page=' + page)
       if (response.ok) {
         // If the response is valid, parse the JSON string and commit the result
         commit('results', await response.json())
