@@ -52,6 +52,12 @@ Run a sepcific Jest test:
 npm run test:unit -- tests/home.test.js
 ```
 
+Update the snapshots of Jest snapshot tests:
+
+```
+npm run test:unit -- -u
+```
+
 Run only Cypress tests:
 
 ```
