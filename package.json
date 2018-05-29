@@ -9,7 +9,7 @@
     "test:e2e": "cypress run",
     "build": "webpack",
     "start": "webpack-serve",
-    "lint": "eslint src"
+    "lint": "eslint src tests cypress"
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
