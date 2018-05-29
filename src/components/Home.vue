@@ -30,9 +30,9 @@
       </div>
 
       <div class="d-flex flex-row justify-content-center btn-group">
-        <button class="btn btn-secondary" v-bind:class="{ disabled: previous == null }" v-on:click="changePage(previous)">Previous</button>
-        <button class="btn btn-secondary disabled">{{ page }}</button>
-        <button class="btn btn-secondary" v-bind:class="{ disabled: next == null }" v-on:click="changePage(next)">Next</button>
+        <button id="previousPage" class="btn btn-secondary" v-bind:class="{ disabled: previous == null }" v-on:click="changePage(previous)">Previous</button>
+        <button id="pageNumber" class="btn btn-secondary disabled">{{ page }}</button>
+        <button id="nextPage" class="btn btn-secondary" v-bind:class="{ disabled: next == null }" v-on:click="changePage(next)">Next</button>
       </div>
 
     </section>
