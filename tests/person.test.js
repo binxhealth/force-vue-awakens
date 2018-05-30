@@ -11,7 +11,7 @@ const localVue = createLocalVue()
 localVue.use(Vuex)
 localVue.use(VueRouter)
 
-test('Home renders correctly', () => {
+test('Person renders correctly', () => {
   const wrapper = mount(Person, { store, localVue })
   expect(wrapper.html()).toMatchSnapshot()
 })
