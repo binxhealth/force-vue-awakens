@@ -14,7 +14,7 @@
           <li class="list-group-item">Eye color: {{ results.eye_color }}</li>
           <li class="list-group-item">Skin color: {{ results.skin_color }}</li>
         </ul>
-      <ul class="list-group pb-3">
+      <ul class="list-group pb-3" id="starships">
         <h4 v-if="results.starships===undefined || results.starships.length !== 0">Starships</h4> <!-- Only show starship if person has starships -->
         <li v-for="starship in results.starships" class="list-group-item">
           <a :href="starship.url">{{ starship.name }}</a>

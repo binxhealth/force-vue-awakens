@@ -1,17 +1,49 @@
 import { mount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 
-import store from '@/store'
 import Person from '@/components/Person'
-import 'isomorphic-fetch'
-import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
 
 localVue.use(Vuex)
-localVue.use(VueRouter)
 
-test('Person renders correctly', () => {
-  const wrapper = mount(Person, { store, localVue })
-  expect(wrapper.html()).toMatchSnapshot()
+const results = {
+  'name': 'Darth Vader',
+  'height': '202',
+  'mass': '136',
+  'hair_color': 'none',
+  'skin_color': 'white',
+  'eye_color': 'yellow',
+  'birth_year': '41.9BBY',
+  'gender': 'male',
+  'homeworld': {'name': 'Tatooine', 'url': 'https://swapi.co/api/planets/1/'},
+  'species': 'Human',
+  'vehicles': [],
+  'starships': [{'name': 'TIE Advanced x1', 'url': 'https://swapi.co/api/starships/13/'}]
+}
+
+const state = {
+  'results': results
+}
+
+var store = new Vuex.Store({
+  modules: {
+    people: {
+      state,
+      namespaced: true
+    }
+  }
+})
+
+const wrapper = mount(Person, { store, localVue })
+test('Person renders name correctly', () => {
+  expect(wrapper.find('h1').text()).toBe('Darth Vader')
+})
+
+test('Person renders homeworld correctly', () => {
+  expect(wrapper.find('#bio').find('a').text()).toBe('Tatooine')
+})
+
+test('Person renders starships correctly', () => {
+  expect(wrapper.find('#starships').find('a').text()).toBe('TIE Advanced x1')
 })
