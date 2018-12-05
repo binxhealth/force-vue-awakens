@@ -1,3 +1,5 @@
+<!-- Created a basic footer, I had to look into Bootstrap becuase I am more familiar with Foundation for styling  -->
+<!-- I Created grids for each item and added hyperlinks -->
 <template>
   <div>
     <main>
@@ -40,5 +42,6 @@
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
+
   </div>
 </template>
