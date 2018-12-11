@@ -16,7 +16,7 @@
             <div class="col-md-6 mb-md-0 mb-3">
               <div class="text-center bg-light">
               <h5 class="text-uppercase text-center font-weight-bold text-white bg-secondary">Pictures</h5>
-              <a href="https://starwars-visualguide.com/#/"> starwars-visualguide.com</a>
+              <a href="https://starwars-visualguide.com/#/">starwars-visualguide.com</a>
               </div>
             </div>
           </div>
