@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const Home = () => import('@/components/Home')
+const HomePage = () => import('@/components/HomePage')
 const Person = () => import('@/components/Person')
 
 // Export a new Vue Router instance to be used in the application.
@@ -12,6 +13,10 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
+      component: Vue.component('HomePage', HomePage)
+    },
+    {
+      path: '/people',
       component: Vue.component('Home', Home)
     },
     {
