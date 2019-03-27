@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "description": "Every generation has a story",
   "scripts": {
-    "test": "npm run unit",
+    "test": "npm run unit && npm run e2e",
     "unit": "jest",
     "e2e": "wdio",
     "build": "webpack",
     "start": "webpack-dev-server",
-    "lint": "eslint src test"
+    "lint": "eslint src test wdio.conf.js"
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
