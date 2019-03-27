@@ -5,7 +5,7 @@ jobs:
       # NODE_ENV: production
 
     docker:
-      - image: cypress/base:10
+      - image: circleci/node
 
     working_directory: ~/repo
 
