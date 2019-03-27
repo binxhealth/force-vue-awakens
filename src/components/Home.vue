@@ -40,7 +40,7 @@ import { mapState } from 'vuex'
 import store from '@/store'
 
 export default {
-  async beforeRouteEnter (to, from, next) {
+  async beforeRouteEnter(to, from, next) {
     await store.dispatch('people/list')
     next()
   },
