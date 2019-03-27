@@ -7,7 +7,7 @@
   that you are working on it.
 * Fork the repository, commit to master, add `#<issue number>` to commit
   messages, and create a pull request.
-* Add [Jest](https://facebook.github.io/jest/en/) tests where appropriate.
+* Add Jest and/or WebdriverIO tests where appropriate.
 * Code style: [StandardJS](https://standardjs.com/)
 * Use comments thoughtfully.
 
@@ -32,6 +32,8 @@ application:
    [polyfilled](https://en.wikipedia.org/wiki/Polyfill_(programming)) by
    [Unfetch]( https://npm.im/unfetch).
 5. [Bootstrap](http://getbootstrap.com): Style toolkit.
+6. [Jest](https://facebook.github.io/jest/en/): JavaScript testing framework.
+7. [WebdriverIO](https://webdriver.io): WebDriver testing framework.
 
 ## Testing
 
@@ -44,21 +46,26 @@ npm test
 Run only Jest tests:
 
 ```
-npm run test:unit
+npm run unit
 ```
 
 Run a sepcific Jest test:
 
 ```
-npm run test:unit -- tests/home.test.js
+npm run unit -- tests/home.test.js
 ```
 
 Update the snapshots of Jest snapshot tests:
 
 ```
-npm run test:unit -- -u
+npm run unit -- -u
 ```
 
+Run only WebdriverIO tests:
+
+```
+npm run e2e
+```
 
 ## Acknowledgement
 
