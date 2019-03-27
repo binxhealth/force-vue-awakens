@@ -50,7 +50,7 @@
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.8.3",
     "webpack-bundle-analyzer": "^2.13.1",
-    "webpack-command": "^0.2.0",
+    "webpack-command": "^0.4.2",
     "webpack-serve": "^1.0.2"
   },
   "babel": {
