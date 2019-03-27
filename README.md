@@ -52,7 +52,7 @@ yarn unit
 Run a sepcific Jest test:
 
 ```console
-yarn unit tests/home.test.js
+yarn unit test/home.test.js
 ```
 
 Update the snapshots of Jest snapshot tests:
