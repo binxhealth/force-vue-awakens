@@ -48,7 +48,7 @@
     "vue-jest": "^2.6.0",
     "vue-loader": "^15.2.0",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.8.3",
+    "webpack": "^4.29.6",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-command": "^0.2.0",
     "webpack-serve": "^1.0.2"
