@@ -39,32 +39,32 @@ application:
 
 Run all tests:
 
-```
-npm test
+```console
+yarn test
 ```
 
 Run only Jest tests:
 
-```
-npm run unit
+```console
+yarn unit
 ```
 
 Run a sepcific Jest test:
 
-```
-npm run unit -- tests/home.test.js
+```console
+yarn unit -- tests/home.test.js
 ```
 
 Update the snapshots of Jest snapshot tests:
 
-```
-npm run unit -- -u
+```console
+yarn unit -- -u
 ```
 
 Run only WebdriverIO tests:
 
-```
-npm run e2e
+```console
+yarn e2e
 ```
 
 ## Acknowledgement
