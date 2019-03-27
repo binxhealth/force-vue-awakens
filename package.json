@@ -8,7 +8,7 @@
     "test:unit": "jest",
     "build": "webpack",
     "start": "webpack-dev-server",
-    "lint": "eslint src tests"
+    "lint": "eslint src test"
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
@@ -18,8 +18,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@appjumpstart/launch": "^2.0.0",
+    "@appjumpstart/launch": "^3.0.0",
     "@vue/test-utils": "^1.0.0-beta.16",
+    "@wdio/cli": "^5.7.6",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.4",
