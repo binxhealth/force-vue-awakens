@@ -30,10 +30,10 @@
     "chalk": "^2.4.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^22.4.1",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
@@ -99,7 +99,8 @@
       "parser": "babel-eslint"
     },
     "env": {
-      "browser": true
+      "browser": true,
+      "jest/globals": true
     },
     "extends": [
       "plugin:vue/recommended",
@@ -107,12 +108,11 @@
     ],
     "plugins": [
       "vue",
-      "chai-friendly"
+      "jest"
     ],
     "rules": {
       "generator-star-spacing": "off",
-      "no-unused-expressions": 0,
-      "chai-friendly/no-unused-expressions": 2
+      "no-unused-expressions": 0
     }
   }
 }
