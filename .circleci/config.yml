@@ -5,7 +5,7 @@ jobs:
       # NODE_ENV: production
 
     docker:
-      - image: circleci/node
+      - image: circleci/node-browsers
 
     working_directory: ~/repo
 
