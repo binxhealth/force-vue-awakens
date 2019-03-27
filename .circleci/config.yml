@@ -18,7 +18,7 @@ jobs:
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
 
-      - run: yarn --prod --frozen-lockfile
+      - run: yarn --frozen-lockfile
 
       - save_cache:
           name: Save Yarn Package Cache
