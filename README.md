@@ -52,13 +52,13 @@ yarn unit
 Run a sepcific Jest test:
 
 ```console
-yarn unit -- tests/home.test.js
+yarn unit tests/home.test.js
 ```
 
 Update the snapshots of Jest snapshot tests:
 
 ```console
-yarn unit -- -u
+yarn unit -u
 ```
 
 Run only WebdriverIO tests:
