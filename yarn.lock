@@ -198,12 +198,12 @@
     yargs "^11.1.0"
     yarn-install "^1.0.0"
 
-"@wdio/config@^5.7.6":
-  version "5.7.6"
-  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.7.6.tgz#dd5a6d31dfcef39f57a0f560ee6531b995a3fc32"
-  integrity sha512-GUWadW6B9J2uGpY8UlfDlpOvg/SZnyY3Yp8N0bFBQ+VrrUr5Zv4Jp31cXkfDE25MsAHulyC3UoLnP3IDz8Xz7g==
+"@wdio/config@^5.7.6", "@wdio/config@^5.7.8":
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.7.8.tgz#d6e80b86e6d48ab1eb1c9034cbea786b694d6746"
+  integrity sha512-XYx1OtJ/9iWk+s9svH1QmyKdWtOakK1o/0V7WBHBFQxR/iSpxRi3IyDPp2nnLTFz6T5eSipH4yS92bAJ1Q6XkQ==
   dependencies:
-    "@wdio/logger" "^5.7.0"
+    "@wdio/logger" "^5.7.8"
     deepmerge "^2.0.1"
     glob "^7.1.2"
 
@@ -216,14 +216,14 @@
     chalk "^2.3.2"
     is-ci "^1.1.0"
 
-"@wdio/jasmine-framework@^5.7.6":
-  version "5.7.6"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.7.6.tgz#955b3420ef82de794f27ca9135812b22e7538b82"
-  integrity sha512-0BhyvLxtS3N535ie14MtQXB9huvoxkXwffymFl/mUyPjE9ZJkrzXYk4ShfRmdWU2oQ0z2fzn7yw1fV8wkqxnpA==
+"@wdio/jasmine-framework@^5.7.8":
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.7.8.tgz#76b8294ea0cad66b2ef7f6fbeb99efe53db7b40c"
+  integrity sha512-nfeD/2/B1m9bY9Ru0dsRGOYTKUhkzujWxFEMU+EbB9G9cRoPhNVP+pFSkzZChEBrpIHczPC0QClUIp0uP92OGg==
   dependencies:
     "@types/jasmine" "^3.3.8"
-    "@wdio/config" "^5.7.6"
-    "@wdio/logger" "^5.7.0"
+    "@wdio/config" "^5.7.8"
+    "@wdio/logger" "^5.7.8"
     jasmine "^3.3.0"
 
 "@wdio/junit-reporter@^5.7.2":
@@ -246,10 +246,10 @@
     "@wdio/runner" "^5.7.6"
     async-exit-hook "^2.0.1"
 
-"@wdio/logger@^5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.7.0.tgz#9c21edb53694935643a805063d322ee4fe2e57e0"
-  integrity sha512-QOaHzeEMvC1k5CWgQgjFwicp7ccIlDpP/zyEiYJHFGhhI3BjiIcry/HkJnZdZMzCApidkxqHMzDCj2oZ9G5jFQ==
+"@wdio/logger@^5.7.0", "@wdio/logger@^5.7.8":
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.7.8.tgz#c2a58d971ce5b891d7dcd5aafa4ecc2d2d1ef7d5"
+  integrity sha512-cbX/fHoTQ7xZvl8X4r828UjWv/ccKhpzPuNGZGukK2DRC7vSOg8sAi8bKNyjvv8nedaZkCQKaSFmsuHHlbIJ7g==
   dependencies:
     chalk "^2.3.0"
     loglevel "^1.6.0"
