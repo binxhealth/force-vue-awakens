@@ -282,10 +282,10 @@
     gaze "^1.1.2"
     webdriverio "^5.7.8"
 
-"@wdio/selenium-standalone-service@^5.7.2":
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/@wdio/selenium-standalone-service/-/selenium-standalone-service-5.7.2.tgz#77b6e04b946da9f90ebc523ebd298422eaf24f6e"
-  integrity sha512-E9QtZoXrOfVIjm/iV/jl3UBtbJ4mQ9bQmdGK0wKte4P9bHP8bZXuQ9pQMRS2zCCjUrjoe17ivxScvJ7bg4ykRQ==
+"@wdio/selenium-standalone-service@^5.7.8":
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/@wdio/selenium-standalone-service/-/selenium-standalone-service-5.7.8.tgz#cb86bd62fad51fbd1c603b13c7b116a23c0ddd76"
+  integrity sha512-frN8q/jp6TUO43HQ9AfSFvPMtFb66lfJLKGGAeLqdZAynUwdg1e3/0RH7PLVkYX5og+1Vr/qLMusNGJbDfSRRw==
   dependencies:
     "@types/selenium-standalone" "^6.15.0"
     fs-extra "^6.0.1"
