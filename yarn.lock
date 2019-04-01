@@ -226,12 +226,12 @@
     "@wdio/logger" "^5.7.8"
     jasmine "^3.3.0"
 
-"@wdio/junit-reporter@^5.7.2":
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/@wdio/junit-reporter/-/junit-reporter-5.7.2.tgz#bb12c64eb5e35f5073d5687c1aa70d7b0701ddc1"
-  integrity sha512-n+DbRNOr/1P64vxwkypLT7gRKrzWlf07sJf9lwJDRJz0O21T9OjlXPKGeAUFt6R27DOdnCllO2aY4gVMZ180gg==
+"@wdio/junit-reporter@^5.7.8":
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/@wdio/junit-reporter/-/junit-reporter-5.7.8.tgz#ca4c87751d77610f572ef6e8f6e147ed37151c38"
+  integrity sha512-1QkzSC5jexi49sy/AiKJjjA6dAfwj6THL1me8Ht5DO/cz3OaqI6W/vr1uimmPmYUJT0Ynr4tB9+FhmPzRKKuQQ==
   dependencies:
-    "@wdio/reporter" "^5.7.2"
+    "@wdio/reporter" "^5.7.8"
     json-stringify-safe "^5.0.1"
     junit-report-builder "^1.3.0"
     validator "^9.4.1"
@@ -263,7 +263,7 @@
   dependencies:
     "@wdio/config" "^5.7.8"
 
-"@wdio/reporter@^5.7.2", "@wdio/reporter@^5.7.8":
+"@wdio/reporter@^5.7.8":
   version "5.7.8"
   resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-5.7.8.tgz#41a6efaeda7403050c15283a9b51e2bb4bad6f77"
   integrity sha512-WufRUkEqFF3EoI6FqSUyzW2NHv7zPNha76Qybp6FSRwZ+W3PW5TAJDHhFK0vRT+iFXNAnfs/PgGAbsFX454o6g==
