@@ -13,7 +13,6 @@
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
-    "testcafe": "^1.1.1",
     "unfetch": "^4.1.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
