@@ -1,7 +1,7 @@
 // Tried to grab console errors in webdriverio through the browser.log api in afterTest hook but unfortunately not able to get it to work
 // Executed the test in testcafe instead. No config required. Just install npm i -g testcafe globally
 // To run the test, tetcafe chrome test/e2e/checkError.js
-import { Selector, ClientFunction, t } from 'testcafe'
+import { t, fixture } from 'testcafe'
 
 fixture`Check console error on each page`
   .page`http://127.0.0.1:8080`
