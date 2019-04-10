@@ -67,8 +67,17 @@ Run only WebdriverIO tests:
 yarn e2e
 ```
 
+## Troubleshooting
+
+If you're having problems with The Star Wars API erroring or being slow, you can
+clone [@binxhealth/swapi][binxSwapiUrl] and run it locally with `yarn start`.
+Then all you would have to do is swap the URLs, e.g. https://swapi.co/api/people
+to http://localhost:8181/api/people.
+
 ## Acknowledgement
 
 * Data is from [The Star Wars API (SWAPI)](https://swapi.co).
 * Images are from [Star Wars: A Visual Guide](https://starwars-visualguide.com).
 * This is a sequel to [force-vue](https://github.com/alexkramer/force-vue).
+
+[binxSwapiUrl]: https://github.com/binxhealth/swapi/
