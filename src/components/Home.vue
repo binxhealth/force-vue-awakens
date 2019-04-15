@@ -30,6 +30,35 @@
       </div>
 
     </section>
+    <section>
+
+      <h2>Starships</h2>
+
+      <div class="d-flex flex-wrap">
+        <router-link
+          v-for="starship in starships"
+          :to="`/starship/${starship.id}`"
+          :key="starship.id"
+          class="card m-2"
+          style="width: 12rem;">
+
+          <img
+            :src="`https://starwars-visualguide.com/assets/img/starships/${starship.id}.jpg`"
+            class="card-img-top"
+            alt="Card image cap">
+
+          <div class="card-body">
+
+            <h5 class="card-title m-0">
+              {{ starship.name }}
+            </h5>
+
+          </div>
+
+        </router-link>
+      </div>
+
+    </section>
 
   </div>
 </template>
@@ -42,10 +71,12 @@ import store from '@/store'
 export default {
   async beforeRouteEnter(to, from, next) {
     await store.dispatch('people/list')
+    await store.dispatch('starships/list')
     next()
   },
   computed: {
-    ...mapState('people', ['results'])
+    ...mapState('people', ['results']),
+    ...mapState('starships', ['starships'])
   }
 }
 </script>
