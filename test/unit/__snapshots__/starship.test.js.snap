@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Starship renders correctly 1`] = `
+"<div class=\\"container-fluid p-5\\"><div class=\\"d-flex flex-row\\"></div> <div class=\\"d-flex flex-row\\"><div><div class=\\"rounded-circle\\" style=\\"height: 350px; width: 350px; background-repeat: no-repeat; background-size: auto 100%; background-image: url(https://starwars-visualguide.com/assets/img/starships/foo.jpg);\\"></div></div> <div class=\\"ml-4\\"><h4></h4> <p></p></div></div> <div class=\\"d-flex flex-row p-2 mt-3\\"><p>Ship Details</p></div> <div class=\\"d-flex flex-row\\"><div class=\\"p-2\\"><p><strong>Megalight per hour</strong> | </p> <p><strong>Cargo Capacity</strong> | </p> <p><strong>Consumables</strong> | </p> <p><strong>Cost (credits)</strong> | </p> <p><strong>Crew Capacity</strong> | </p> <p><strong>Hyperdrive Rating</strong> | </p></div> <div class=\\"p-2\\"><p><strong>Length</strong> | 0</p> <p><strong>Manufacturer</strong> | </p> <p><strong>Max Atmosphering Speed</strong> | </p> <p><strong>Starship Class</strong> | </p> <p><strong>Passenger Capacity</strong> | </p></div></div> <hr> <div class=\\"d-flex flex-row\\"><p class=\\"title\\">
+      Pilots
+    </p></div> <div class=\\"d-flex flex-row\\"></div> <hr> <div class=\\"d-flex flex-row\\"><p class=\\"title\\">
+      Appears in
+    </p></div> <div class=\\"d-flex flex-row\\"></div></div>"
+`;
