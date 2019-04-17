@@ -6158,10 +6158,10 @@ node-pre-gyp@^0.10.0:
     semver "^5.3.0"
     tar "^4"
 
-node@^11.12.0:
-  version "11.12.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-11.12.0.tgz#ecf81fc5c6f27fd597bd7ffbe1cf1f7c2fa3a990"
-  integrity sha512-um2HVV67QzgmYnfrT6XszwwUT7S/i5nzIls68jEYOfVFJye+0ta2leda2ZWYUHzAajbUYyMp312v+1yYh0Jixw==
+node@^11.13.0:
+  version "11.13.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-11.13.0.tgz#a5bfd5d55749b7e7795d9da2e04a9f319e29e2ab"
+  integrity sha512-Ak7+1LVX2IYFetW8SO5tk/4hn/JzhirAkB3430KHEcGSVdruOs6KbvNBE+MXDa98aBSSS9WJ/6p10YoY3HiEBQ==
   dependencies:
     node-bin-setup "^1.0.0"
 
