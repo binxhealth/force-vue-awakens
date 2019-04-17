@@ -28,7 +28,6 @@
 
         </router-link>
       </div>
-
     </section>
 
   </div>
