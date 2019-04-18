@@ -1,6 +1,6 @@
 <template>
   <div class="container pt-4 pb-4">
-    <section>
+    <section id="peopleSection">
       <h2>People</h2>
 
       <div class="d-flex flex-wrap">
@@ -24,7 +24,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="planetsSection">
       <h2>Planets</h2>
 
       <div class="d-flex flex-wrap">

@@ -3,6 +3,8 @@
     <ul
       class="list-group"
       style="width: 40vw; margin-left: 30vw">
+      <!-- nichols1: loop through the key value pairs of the planet info
+      and check if they are links and if so then format them so they are linkable-->
       <li
         v-for="(value, key, index) in planets[$route.params.id]"
         :key="index"
