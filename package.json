@@ -9,7 +9,7 @@
     "e2e": "wdio",
     "build": "webpack",
     "start": "webpack-dev-server",
-    "lint": "eslint --ext .js,.vue src test wdio.conf.js"
+    "lint": "eslint --ext .js,.vue src test"
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
