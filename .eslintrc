@@ -1,10 +1,12 @@
 {
-    "extends": [
-        "plugin:vue/recommended"
-    ],
-    "plugins": ["webdriverio"],
-    "env": {
-      "webdriverio/wdio": true,
-      "mocha": true
-    }
+  "root": true,
+  "parserOptions": {"parser": "babel-eslint"},
+  "extends": [
+    "plugin:vue/recommended"
+  ],
+  "plugins": ["webdriverio"],
+  "env": {
+    "webdriverio/wdio": true,
+    "mocha": true
+  }
 }
