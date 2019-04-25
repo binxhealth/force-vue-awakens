@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "plugin:vue/recommended"
+    ],
+    "plugins": ["webdriverio"],
+    "env": {
+      "webdriverio/wdio": true,
+      "mocha": true
+    }
+}
