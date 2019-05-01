@@ -402,14 +402,14 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@wdio/cli@^5.7.15":
-  version "5.7.15"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.7.15.tgz#8aef6f5b92f7299365d627ddff414dbb4432afb3"
-  integrity sha512-5bCJobnDl31LU09Kg/6+ips7jhX2Ya071m1He2FM5ACjToEBxmBRANEt5fKZwnwkvBlsiGCOF7siQMZNDZkMrA==
+"@wdio/cli@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.8.0.tgz#aa15cb141593ef5625445e6b1ea9f8eb88685279"
+  integrity sha512-ZH2s00d6737Xei3r/WrXlIZEpAvGvVnMmYGD6PBOIMNssL+DuUhfYTfj3/XgvZ5LXK+XFzML5fNwNGVquITvYw==
   dependencies:
-    "@wdio/config" "^5.7.13"
-    "@wdio/logger" "^5.7.8"
-    "@wdio/utils" "^5.7.8"
+    "@wdio/config" "^5.8.0"
+    "@wdio/logger" "^5.8.0"
+    "@wdio/utils" "^5.8.0"
     async-exit-hook "^2.0.1"
     chalk "^2.3.2"
     chokidar "^2.0.4"
@@ -422,11 +422,11 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^2.3.0"
-    webdriverio "^5.7.15"
+    webdriverio "^5.8.0"
     yargs "^11.1.0"
     yarn-install "^1.0.0"
 
-"@wdio/config@^5.7.13", "@wdio/config@^5.8.0":
+"@wdio/config@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.8.0.tgz#fe817cf8ebae84ceff6dacadd4f077e488d1d85d"
   integrity sha512-U9MVi0cLw8Z5idvN91tRMTVwpi/RUnajyUJuK/NGUtwgq30VJT+UlZo+wovfyGgHj3Il/gMFvKLRoFmjOqlrTA==
@@ -456,7 +456,7 @@
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
-"@wdio/logger@^5.7.8", "@wdio/logger@^5.8.0":
+"@wdio/logger@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.8.0.tgz#9d69dec2eaaee011c03de0f9239f8c520dfe8260"
   integrity sha512-YQ6fybKvWEZPBVf/rrhedohj6g4U1cb9w/6IkHOOhDYbiwwvmAVk7h7QTCsdVc1pxO7Y4/5gI46bmoASgPsrnw==
@@ -466,7 +466,7 @@
     loglevel-plugin-prefix "^0.5.3"
     strip-ansi "^4.0.0"
 
-"@wdio/repl@^5.7.13", "@wdio/repl@^5.8.0":
+"@wdio/repl@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@wdio/repl/-/repl-5.8.0.tgz#e2fa1f3e08c77aad3681b0bf1a9e2ecf9c4f85a4"
   integrity sha512-Rw3ohb21v363hITHDf5bvHV2Sf1xzCikhwVG6F4W1WhfuGVb2hdKiNKTNQm3qLm48R55ooREVVrb8IXc8efc4A==
@@ -509,14 +509,6 @@
     "@wdio/reporter" "^5.7.8"
     chalk "^2.3.2"
     pretty-ms "^3.1.0"
-
-"@wdio/utils@^5.7.8":
-  version "5.7.8"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-5.7.8.tgz#e1a4ebd243cc3fb2a948c23904a56d1d6187757d"
-  integrity sha512-igtwm9AK6kkssZNq6KhI5/6EV5Rk5pXOhp2Xk1yInycjJJSdY9KOcIUK1h3he/kj8bXIslnxoF+TqplKimxW3A==
-  dependencies:
-    "@wdio/logger" "^5.7.8"
-    deepmerge "^3.2.0"
 
 "@wdio/utils@^5.8.0":
   version "5.8.0"
@@ -8608,17 +8600,6 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webdriver@^5.7.15:
-  version "5.7.15"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.7.15.tgz#c03bbbbddb17ffbdbd367e3a32da5645b5729306"
-  integrity sha512-lRH1yalNc/1ST4Nim7PUYfp/DSU1EAY4gEMK5+7Foh3XyUp7TUDnXNruBxglAK0lG2+ocfsHvFVx7e4rEo/1TQ==
-  dependencies:
-    "@wdio/config" "^5.7.13"
-    "@wdio/logger" "^5.7.8"
-    deepmerge "^2.0.1"
-    lodash.merge "^4.6.1"
-    request "^2.83.0"
-
 webdriver@^5.8.0:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.8.0.tgz#a6fc6ac96474eab642a2a53d0d9b8fff7a203cb5"
@@ -8629,24 +8610,6 @@ webdriver@^5.8.0:
     deepmerge "^2.0.1"
     lodash.merge "^4.6.1"
     request "^2.83.0"
-
-webdriverio@^5.7.15:
-  version "5.7.15"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.7.15.tgz#511d27d2963e5e24c565d56a06d589364d2e4192"
-  integrity sha512-Dg/azrry/qVZhmUfT3Sn5ODssYeCnXjhd9zUAvZIihNC2T2QrRCz7XSAhLuY4PTfY2vQfzP1zC0f8XiHIotX6A==
-  dependencies:
-    "@wdio/config" "^5.7.13"
-    "@wdio/logger" "^5.7.8"
-    "@wdio/repl" "^5.7.13"
-    css-value "^0.0.1"
-    grapheme-splitter "^1.0.2"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.merge "^4.6.1"
-    lodash.zip "^4.2.0"
-    rgb2hex "^0.1.0"
-    serialize-error "^3.0.0"
-    webdriver "^5.7.15"
 
 webdriverio@^5.8.0:
   version "5.8.0"
