@@ -445,10 +445,10 @@
     "@wdio/logger" "^5.7.8"
     jasmine "^3.3.0"
 
-"@wdio/junit-reporter@^5.7.16":
-  version "5.7.16"
-  resolved "https://registry.yarnpkg.com/@wdio/junit-reporter/-/junit-reporter-5.7.16.tgz#7d14ed04d9647895102976cd603d12d6e39bf21e"
-  integrity sha512-Q0ORIuL2tAsTaFNK+7fwYHYucHPOOcNHy9V5QDyXTIuXUQqHpUwQdlS1pJRdrOfEWLAFuDaFD24jWr6JPQyDOA==
+"@wdio/junit-reporter@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@wdio/junit-reporter/-/junit-reporter-5.8.0.tgz#ee953a849ea301d8efc1e947e201a128dc7ced6d"
+  integrity sha512-610DqXquRP/9ZGAF0B+xEo2R0EmAxFhUNIJBYeEAszr+lSZr/Kfb8qLMw7mouPEVsgMrNe70mQLtbYUos5ifmQ==
   dependencies:
     "@wdio/reporter" "^5.7.8"
     json-stringify-safe "^5.0.1"
