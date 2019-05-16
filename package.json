@@ -13,7 +13,6 @@
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.4.4",
     "unfetch": "^4.1.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.6",
@@ -21,10 +20,6 @@
   },
   "devDependencies": {
     "@appjumpstart/launch": "^3.0.0",
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/register": "^7.4.4",
     "@vue/test-utils": "^1.0.0-beta.16",
     "@wdio/cli": "^5.8.1",
     "@wdio/jasmine-framework": "^5.8.1",
@@ -32,10 +27,14 @@
     "@wdio/selenium-standalone-service": "^5.8.0",
     "@wdio/spec-reporter": "^5.8.0",
     "@wdio/sync": "^5.3.2",
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^7.1.4",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
@@ -59,23 +58,41 @@
     "vue-jest": "^3.0.4",
     "vue-loader": "^15.2.0",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.31.0",
+    "webpack": "^4.30.0",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.3.1",
     "webdriverio": "^5.3.5"
   },
   "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+              "node": "current"
+              }
+            }
+          ]
+        ]
+      },
+      "dev": {
+        "presets": [
+          [
+            "env",
+            {
+              "modules": false
+            }
+          ],
+         "stage-2"
+        ],
+        "plugins": [
+          "transform-runtime"
+        ]
+      }
+    }
   },
   "jest": {
     "testURL": "http://localhost:8080",
