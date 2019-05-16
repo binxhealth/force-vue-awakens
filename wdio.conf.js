@@ -18,7 +18,7 @@ exports.config = {
   // directory is where your package.json resides, so `wdio` will be called from there.
   //
   specs: [
-    'test/e2e/**/*.js'
+    'test/e2e/tests/**/*.js'
   ],
   // Patterns to exclude.
   exclude: [
@@ -52,12 +52,14 @@ exports.config = {
     // 5 instances get started at a time.
     maxInstances: 5,
     //
-    browserName: 'firefox'
+    browserName: 'chrome'
     // If outputDir is provided WebdriverIO can capture driver session logs
     // it is possible to configure which logTypes to include/exclude.
     // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
     // excludeDriverLogs: ['bugreport', 'server'],
   }],
+
+
   //
   // ===================
   // Test Configurations
@@ -65,7 +67,7 @@ exports.config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: 'info',
+  logLevel: 'warn',
   //
   // Set specific log levels per logger
   // loggers:
@@ -76,10 +78,11 @@ exports.config = {
   // - wdio-sumologic-reporter
   // - wdio-cli, wdio-config, wdio-sync, wdio-utils
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  // logLevels: {
-  // webdriver: 'info',
-  // 'wdio-applitools-service': 'info'
-  // },
+  logLevels: {
+    webdriver: 'warn',
+    browser: 'warn',
+    client: 'warn'
+  },
   //
   // If you only want to run your tests until a specific amount of tests have failed use
   // bail (default is 0 - don't bail, run all tests).
@@ -136,7 +139,7 @@ exports.config = {
     expectationResultHandler: function (passed, assertion) {
       // do something
     }
-  }
+  },
 
   //
   // =====
@@ -168,8 +171,9 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-  // before: function (capabilities, specs) {
-  // },
+  before: function (capabilities, specs) {
+    require('@babel/register');
+  }
   /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
