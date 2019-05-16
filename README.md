@@ -18,6 +18,16 @@
 3. Run `yarn start`.
 4. Navigate to `http://localhost:8080`
 
+## Configuring Babel
+
+Before running anything, the Babel environment must be set
+
+If starting the VueJS web application/running unit tests, set Babel environment to 'dev' using
+`export BABEL_ENV=dev`
+
+If running the e2e tests, set Babel environment to 'test' using
+`export BABEL_ENV=test`
+
 ## Resources
 
 Here are some software projects / technologies that are used in this
