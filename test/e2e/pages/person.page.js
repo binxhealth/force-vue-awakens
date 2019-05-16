@@ -1,5 +1,5 @@
 import Page from './page'
-class PersonPage extends Page{
+class PersonPage extends Page {
   /**
   * define elements on the person page to be used for testing
   */
@@ -10,14 +10,14 @@ class PersonPage extends Page{
   * define page methods
   */
   navigate () {
-    //super.open('/people')
+    // super.open('/people')
   }
   /**
   * need to wait for dynamically loaded elements
   */
-  waitForInfoToLoad(timeout){
-    if(!this.personInfo.isExisting()){
-        this.personInfo.waitForExist(timeout);
+  waitForInfoToLoad (timeout) {
+    if (!this.personInfo.isExisting()) {
+      this.personInfo.waitForExist(timeout)
     }
   }
   /**
@@ -28,4 +28,4 @@ class PersonPage extends Page{
   }
 }
 
-export default new PersonPage();
+export default new PersonPage()
