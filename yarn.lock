@@ -364,11 +364,6 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jasmine@^3.3.8":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.12.tgz#bf282cb540e9ad7a0a04b742082c073b655eab39"
-  integrity sha512-lXvr2xFQEVQLkIhuGaR3GC1L9lMU1IxeWnAF/wNY5ZWpC4p9dgxkKkzMp7pntpAdv9pZSnYqgsBkCg32MXSZMg==
-
 "@types/node@*":
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.0.tgz#ec5594728811dc2797e42396cfcdf786f2052c12"
@@ -457,12 +452,11 @@
     deepmerge "^2.0.1"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^5.8.1":
-  version "5.8.1"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.8.1.tgz#3bdf0ee4012bfc765d18ad13d02b318d4f105750"
-  integrity sha512-Kcacry4WYh4/tVnU9pcu/N1CvIfS38XYR9e6yHpOAg1ks9c7iFZFifrVX73HGNHKzYGjiO1qGQEC2LGAvmcslQ==
+"@wdio/jasmine-framework@^5.8.4":
+  version "5.8.4"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.8.4.tgz#151bf321a28d17a8063d4291b14b2edc574e9473"
+  integrity sha512-Nnwb5r5X0c8Ohks9vtiZG0gi5Z8rVGOP8iQS1PkcqI0j0VokwxX/ie83vbPsJbd9GiZ3V/FR3qppRbvVpsq/pQ==
   dependencies:
-    "@types/jasmine" "^3.3.8"
     "@wdio/config" "^5.8.1"
     "@wdio/logger" "^5.8.0"
     jasmine "^3.3.0"
