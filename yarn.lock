@@ -424,10 +424,10 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@wdio/cli@^5.9.4":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.9.4.tgz#59614dce58d803a009f85c6b7984bfaf86f1e557"
-  integrity sha512-M4cYM+KVLXbD+kplesAki/vYYHucSil+qYvfwpSQZo76BGmSM+9g9dMmDTUUeNR4/J90zbtIZ81BleADoBCiFw==
+"@wdio/cli@^5.9.5":
+  version "5.9.5"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.9.5.tgz#bf5888b7e142b84d7ff2cebfd2f0115b7dd3d0aa"
+  integrity sha512-uCwrSB783EtSqK/OTLca6jfLMaeeBKXld3ekwjLrxOo3U1i0xgxOfgZKKRiPTfXyDjUc9fSyTNx1ju8cQTKkyg==
   dependencies:
     "@wdio/config" "^5.9.4"
     "@wdio/logger" "^5.9.3"
@@ -444,7 +444,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^3.2.0"
-    webdriverio "^5.9.4"
+    webdriverio "^5.9.5"
     yargs "^13.2.4"
     yarn-install "^1.0.0"
 
@@ -8679,10 +8679,10 @@ webdriver@^5.9.4:
     lodash.merge "^4.6.1"
     request "^2.83.0"
 
-webdriverio@^5.8.1, webdriverio@^5.9.4:
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.9.4.tgz#a14602fcee41d394b2961124b634b161c7d8c795"
-  integrity sha512-JFGDrFebkTFDXhyJBpR3boo2QfeACUoB0lpbRcDYihgSsDq38rmdedwiVv1HI/ilBAIXccBfefYJsrSyfjpv0w==
+webdriverio@^5.8.1, webdriverio@^5.9.5:
+  version "5.9.5"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.9.5.tgz#bda653596e44fad2c4ced1a29247390e4e0028ad"
+  integrity sha512-OhPNHUT5kGH6gldAreqXrOT/1DhP11Vfv7cqDvz/pZCrg9itIBgyEaN1FwBOlP7PF3ietLMlvPuLij5i7NNQyg==
   dependencies:
     "@wdio/config" "^5.9.4"
     "@wdio/logger" "^5.9.3"
