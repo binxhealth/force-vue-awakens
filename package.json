@@ -9,7 +9,7 @@
     "e2e": "wdio",
     "build": "webpack",
     "start": "webpack-dev-server",
-    "lint": "eslint src test wdio.conf.js"
+    "lint": "eslint --ext js,vue src test wdio.conf.js"
   },
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "dependencies": {
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@appjumpstart/launch": "^3.0.0",
+    "@ianwalter/eslint-config-vue": "^1.2.1",
     "@vue/test-utils": "^1.0.0-beta.16",
     "@wdio/cli": "^5.9.4",
     "@wdio/jasmine-framework": "^5.8.1",
@@ -37,13 +38,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jest": "^22.6.4",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.2.2",
     "eslint-plugin-webdriverio": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
@@ -111,11 +106,9 @@
       "webdriverio/wdio": true
     },
     "extends": [
-      "plugin:vue/recommended",
-      "standard"
+      "@ianwalter/vue"
     ],
     "plugins": [
-      "vue",
       "jest",
       "webdriverio"
     ],

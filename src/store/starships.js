@@ -16,8 +16,8 @@ export default {
   // https://vuex.vuejs.org/guide/actions.html
   actions: {
     async list ({ commit }, page = 1) {
-      // Fetch People from SWAPI and await the response.
-      const response = await fetch('https://swapi.co/api/people')
+      // Fetch Starships from SWAPI and await the response.
+      const response = await fetch('https://swapi.co/api/starships')
       if (response.ok) {
         // Parse the JSON string returned in the response into a JavaScript
         // object and destructure the results property out of that object.

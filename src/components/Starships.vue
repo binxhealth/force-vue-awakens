@@ -3,25 +3,25 @@
 
     <section>
 
-      <h2>People</h2>
+      <h2>Starships</h2>
 
       <div class="d-flex flex-wrap">
         <router-link
-          v-for="(person, id) in results"
-          :key="id"
-          :to="`/people/${id}`"
+          v-for="(starship) in results"
+          :key="fetchStarshipId(starship)"
+          :to="`/starships/${fetchStarshipId(starship)}`"
           class="card m-2"
           style="width: 12rem;"
         >
           <img
-            :src="`https://starwars-visualguide.com/assets/img/characters/${id + 1}.jpg`"
+            :src="fetchImageUrl(starship)"
             class="card-img-top"
             alt="Card image cap"
           >
 
           <div class="card-body">
             <h5 class="card-title m-0">
-              {{ person.name }}
+              {{ starship.name }}
             </h5>
           </div>
         </router-link>
@@ -39,14 +39,18 @@ import store from '@/store'
 
 export default {
   async beforeRouteEnter (to, from, next) {
-    await store.dispatch('people/list')
+    await store.dispatch('starships/list')
     next()
   },
   computed: {
-    ...mapState('people', ['results'])
+    ...mapState('starships', ['results'])
   },
-  mounted () {
-    throw new Error('error test')
+  methods: {
+    fetchStarshipId: starship => starship.url.replace(/\D/g, ''),
+    fetchImageUrl (starship) {
+      const id = this.fetchStarshipId(starship)
+      return `https://starwars-visualguide.com/assets/img/starships/${id}.jpg`
+    }
   }
 }
 </script>
