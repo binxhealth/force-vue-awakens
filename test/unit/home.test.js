@@ -9,6 +9,12 @@ const localVue = createLocalVue()
 localVue.use(Vuex)
 
 test('Home renders correctly', () => {
-  const wrapper = mount(Home, { store, localVue })
+  const wrapper = mount(Home, {
+    store,
+    localVue,
+    methods: {
+      errorTest: () => {}
+    }
+  })
   expect(wrapper.html()).toMatchSnapshot()
 })

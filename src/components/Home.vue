@@ -46,7 +46,11 @@ export default {
     ...mapState('people', ['results'])
   },
   mounted () {
-    throw new Error('error test')
+    // Delegated to method because it can be overridden in unit test
+    this.errorTest()
+  },
+  methods: {
+    errorTest: () => { throw new Error('error test') }
   }
 }
 </script>
