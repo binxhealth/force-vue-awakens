@@ -378,11 +378,6 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jasmine@^3.3.8":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.12.tgz#bf282cb540e9ad7a0a04b742082c073b655eab39"
-  integrity sha512-lXvr2xFQEVQLkIhuGaR3GC1L9lMU1IxeWnAF/wNY5ZWpC4p9dgxkKkzMp7pntpAdv9pZSnYqgsBkCg32MXSZMg==
-
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -467,7 +462,7 @@
     yargs "^13.2.4"
     yarn-install "^1.0.0"
 
-"@wdio/config@^5.8.1", "@wdio/config@^5.9.4":
+"@wdio/config@^5.9.4":
   version "5.9.4"
   resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.9.4.tgz#f8b992d421b9311842facffd5c17da4b1573c7c7"
   integrity sha512-wlQJJfXwR28xktsXpOC7s/+fWcLAKhIB6s6slCREm3RvcJBfJ9pM4z9lrBRAiawvI4bpNBl8EdUZrRwCtGlkJQ==
@@ -476,14 +471,13 @@
     deepmerge "^3.2.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^5.8.1":
-  version "5.8.1"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.8.1.tgz#3bdf0ee4012bfc765d18ad13d02b318d4f105750"
-  integrity sha512-Kcacry4WYh4/tVnU9pcu/N1CvIfS38XYR9e6yHpOAg1ks9c7iFZFifrVX73HGNHKzYGjiO1qGQEC2LGAvmcslQ==
+"@wdio/jasmine-framework@^5.9.4":
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.9.4.tgz#c971aef51cc25dc0a0e0bab1a6179ffbbf4cfd39"
+  integrity sha512-wNCMOhXYNv43NzWNHdQf4xRemEkv7pdiqzMq5Vqd2z0KlhuTXkOGkwVmVMSf1HVhXE54TkoII+tXpnKVBY4jAg==
   dependencies:
-    "@types/jasmine" "^3.3.8"
-    "@wdio/config" "^5.8.1"
-    "@wdio/logger" "^5.8.0"
+    "@wdio/config" "^5.9.4"
+    "@wdio/logger" "^5.9.3"
     jasmine "^3.3.0"
 
 "@wdio/local-runner@^5.9.6":
@@ -497,7 +491,7 @@
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
-"@wdio/logger@^5.8.0", "@wdio/logger@^5.9.3":
+"@wdio/logger@^5.9.3":
   version "5.9.3"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.9.3.tgz#8aab6f1e8aafe7b655b0840e0ed9dcfd70744887"
   integrity sha512-tpvu/wQqLAaShIIqZr7e/xl3lt9IeE6z/9DN59r+6xTC+RfD8YJ3D1n/c2jOsGbs/IW8RSWRvOERBWvpPcyQxw==
