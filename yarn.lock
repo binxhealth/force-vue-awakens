@@ -456,10 +456,10 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@wdio/cli@^5.9.6":
-  version "5.9.6"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.9.6.tgz#9b2b4f8a73663ccb8d2d3752f6d0404e6aa7729a"
-  integrity sha512-LQJAL9tKNn45tvQMkJRLUWILSkma8odM5oIhZDgpmDDra/ScpBT2pmZkAlF2Ks0bnhy9XN+TxQIddYWsEotcrA==
+"@wdio/cli@^5.10.3":
+  version "5.10.3"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.10.3.tgz#aa9a8988d3bdefb227b1a05e73d0c1b4b96f2d22"
+  integrity sha512-QhFbB9WicphLXaHSDskiegBRFOckxiivCsUNOLMC/OJCaJ4KCtOH9Yn4MDoKlqg8FjghxchiiP6tyQjf50OKNw==
   dependencies:
     "@wdio/config" "^5.9.4"
     "@wdio/logger" "^5.9.3"
@@ -476,7 +476,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^3.2.0"
-    webdriverio "^5.9.6"
+    webdriverio "^5.10.1"
     yargs "^13.2.4"
     yarn-install "^1.0.0"
 
@@ -8677,10 +8677,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webdriver@^5.9.6:
-  version "5.9.6"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.9.6.tgz#0c4b46da389b7050bd194a81e5f8479bd5e5245d"
-  integrity sha512-cEPtbOCTMRiedWyAlc2Bxnxw0lTRKqrAEDP9yB7rwUKQs3OZQzpDrmqiYZ/rBhJ0j+up6Cmx/L9rdm9Iyp4WVQ==
+webdriver@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.10.0.tgz#13a450dba65e39c5eb691655001cb77ddf1c29c1"
+  integrity sha512-nUgPwBDh5FTBkYaUd1Vh4chQqJcJFFLdj1n+Yh2TKH5gxHmGYvQg5gJIsMA3z68crmxp4fNkXdFwiJculS8GIQ==
   dependencies:
     "@wdio/config" "^5.9.4"
     "@wdio/logger" "^5.9.3"
@@ -8688,10 +8688,10 @@ webdriver@^5.9.6:
     lodash.merge "^4.6.1"
     request "^2.83.0"
 
-webdriverio@^5.9.6:
-  version "5.9.6"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.9.6.tgz#7cfe77d234bb9961b71a4070541458348de34702"
-  integrity sha512-xjQyz0hdDXyPViaMTUuP8lpg91CxOVNQA20bp3kqRHlolipCmALTo1EFHF9+pz2aI5KGgVyz4r2+5T11VW9MYg==
+webdriverio@^5.10.1, webdriverio@^5.9.6:
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.10.1.tgz#01be58e6a457c1d5a8c1fa9f70e91234b77dce84"
+  integrity sha512-bCd5aZoYlevb0GGiNZqKG3DRdg7X/uaxStrqmM1EvdJBfhiSh2Nnb7AiOnrh83qpSWUUEg80gPLxIXCZhacZrg==
   dependencies:
     "@wdio/config" "^5.9.4"
     "@wdio/logger" "^5.9.3"
@@ -8705,7 +8705,7 @@ webdriverio@^5.9.6:
     resq "^1.5.0"
     rgb2hex "^0.1.0"
     serialize-error "^4.1.0"
-    webdriver "^5.9.6"
+    webdriver "^5.10.0"
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
