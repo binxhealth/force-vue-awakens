@@ -498,14 +498,14 @@
     "@wdio/logger" "^5.9.3"
     jasmine "^3.3.0"
 
-"@wdio/local-runner@^5.9.6":
-  version "5.9.6"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-5.9.6.tgz#b5c754c1c44067c9d8f031a3590cd29b35425d8f"
-  integrity sha512-bExwWZJq+YaxWjCDiCDQFoCHObtXkbTIV4EKas70MtWgZTFKFHpGA9+nCviZpovE7R1WZjOmkzhoM80kbzuAYA==
+"@wdio/local-runner@^5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-5.10.4.tgz#4f9cfda55b9fd18fdf435519cc0e5e19210ae52c"
+  integrity sha512-YhYoDc0Ejl/UK2Uzbw7Al1q3x1lXpFh2QwNWdBSLuxBSI+VdnJZFjll2tii6KJDYWHjbRsBvKt76wwo4dGz/BA==
   dependencies:
     "@wdio/logger" "^5.9.3"
     "@wdio/repl" "^5.9.4"
-    "@wdio/runner" "^5.9.6"
+    "@wdio/runner" "^5.10.4"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
@@ -533,17 +533,17 @@
   dependencies:
     fs-extra "^8.0.1"
 
-"@wdio/runner@^5.9.6":
-  version "5.9.6"
-  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-5.9.6.tgz#2027d021000e0be5f907845fc65faf2dccb52241"
-  integrity sha512-uW3Enyxs4U3SeBpszLSFuYpi4/EOMalID85LNjQCVy+mtFw3234LywnTwfIsitUREQmES68flAVI3JG6rhWTCQ==
+"@wdio/runner@^5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-5.10.4.tgz#c9f9ec2a4b466faa709f7a8bec764c866ff0995c"
+  integrity sha512-M9sRQWF9ZAq0XdTQF3SIWmieHKcpbdV7wQEfgubduincfRkiDrhPryDjC1paq+9oa/INKLA3b0PlqvfDziCSaw==
   dependencies:
     "@wdio/config" "^5.9.4"
     "@wdio/logger" "^5.9.3"
     "@wdio/utils" "^5.9.3"
     deepmerge "^3.2.0"
     gaze "^1.1.2"
-    webdriverio "^5.9.6"
+    webdriverio "^5.10.4"
 
 "@wdio/selenium-standalone-service@^5.9.3":
   version "5.9.3"
@@ -8693,7 +8693,7 @@ webdriver@^5.10.4:
     lodash.merge "^4.6.1"
     request "^2.83.0"
 
-webdriverio@^5.10.4, webdriverio@^5.9.6:
+webdriverio@^5.10.4:
   version "5.10.4"
   resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.10.4.tgz#dee1cd9373fd9281ec65baee2b6f76da895b4c1e"
   integrity sha512-GTZb5oJh3zsdnOSNr/t9/H+Lk9FH5yzGuHoPz3bwNrXyphnXmI7InEZ4p0Z1ybDtpMZUmOckwlb3zpzd0LxFhg==
