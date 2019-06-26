@@ -480,21 +480,21 @@
     yargs "^13.2.4"
     yarn-install "^1.0.0"
 
-"@wdio/config@^5.9.4":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.9.4.tgz#f8b992d421b9311842facffd5c17da4b1573c7c7"
-  integrity sha512-wlQJJfXwR28xktsXpOC7s/+fWcLAKhIB6s6slCREm3RvcJBfJ9pM4z9lrBRAiawvI4bpNBl8EdUZrRwCtGlkJQ==
+"@wdio/config@^5.10.8", "@wdio/config@^5.9.4":
+  version "5.10.8"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.10.8.tgz#247e971548f20989a98938501a9318bf52a6ce4f"
+  integrity sha512-991t0lXvqB6odM84Ck9rAoFoCE/sqQV2QAQtGtj9eliVUEKIBiA+MK522X85JAEkz7OO1rup+sxdMqF+gQHqsQ==
   dependencies:
     "@wdio/logger" "^5.9.3"
     deepmerge "^3.2.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^5.8.1":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.9.4.tgz#c971aef51cc25dc0a0e0bab1a6179ffbbf4cfd39"
-  integrity sha512-wNCMOhXYNv43NzWNHdQf4xRemEkv7pdiqzMq5Vqd2z0KlhuTXkOGkwVmVMSf1HVhXE54TkoII+tXpnKVBY4jAg==
+"@wdio/jasmine-framework@^5.10.8":
+  version "5.10.8"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.10.8.tgz#58ccae366d6580d3e2d00aa69386f9b3498b1ba2"
+  integrity sha512-SJi9dZd/EOJNRG3dLQ0H8uOKKhIa34v8e+lB6cpsBQ2zIBO+w/wug32xhHCY5Yg3VqyfbhI/JPpvtUalWUIftQ==
   dependencies:
-    "@wdio/config" "^5.9.4"
+    "@wdio/config" "^5.10.8"
     "@wdio/logger" "^5.9.3"
     jasmine "^3.3.0"
 
