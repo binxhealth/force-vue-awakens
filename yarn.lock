@@ -456,10 +456,10 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@wdio/cli@^5.11.2":
-  version "5.11.2"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.11.2.tgz#7096f209a036ded6ab459decf4d9c0fbe42547e6"
-  integrity sha512-8VW25OjiV6cqqhQDaiJUKiZL1PRWqrotieDK4t0fE6wSk7nRgTGW1UfjocJ2249xEYji45bn6Vi+8gXnrxKCrQ==
+"@wdio/cli@^5.11.5":
+  version "5.11.5"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.11.5.tgz#323f5fef012bbb97c677860921fd6b5ce69451ee"
+  integrity sha512-xrCWDNCKWQ9JJdXU3o0Q5+RLSJz1jkkbq2qyIRJYxGxQVe8y0e7irxVjNlYG/gmhuVZNxfp4BOwAZzld1cnbqg==
   dependencies:
     "@wdio/config" "^5.11.0"
     "@wdio/logger" "^5.11.0"
@@ -476,7 +476,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^3.2.0"
-    webdriverio "^5.11.2"
+    webdriverio "^5.11.5"
     yargs "^13.2.4"
     yarn-install "^1.0.0"
 
@@ -8830,17 +8830,6 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webdriver@^5.11.0:
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.11.0.tgz#21cc82ec681dedac14faea74b1c121d4563e37bc"
-  integrity sha512-iGjynLrEiAe8UAPtj1I53Dmn56LGlP5ypYvFUKEljo8YWbg2DEg4nLHLIE2c1RHMLQc8eXpMmWc4qkO8j5Y+Jw==
-  dependencies:
-    "@wdio/config" "^5.11.0"
-    "@wdio/logger" "^5.11.0"
-    deepmerge "^4.0.0"
-    lodash.merge "^4.6.1"
-    request "^2.83.0"
-
 webdriver@^5.11.5:
   version "5.11.5"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.11.5.tgz#74c133eff7a4dc87c42b3919f1d1d702571ede4c"
@@ -8851,27 +8840,6 @@ webdriver@^5.11.5:
     deepmerge "^4.0.0"
     lodash.merge "^4.6.1"
     request "^2.83.0"
-
-webdriverio@^5.11.2:
-  version "5.11.2"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.11.2.tgz#1eb50623d8d1a8c31f238a34587e3ceafa2a6f68"
-  integrity sha512-r9z8CRGuUN7I83TM+pNQNkoieIeG42ymDCRkJMgpBBxMRnde+gMFH3MrYqgg5ViPHfwExuRqrI2MWY60czkAKw==
-  dependencies:
-    "@wdio/config" "^5.11.0"
-    "@wdio/logger" "^5.11.0"
-    "@wdio/repl" "^5.11.0"
-    archiver "^3.0.0"
-    css-value "^0.0.1"
-    grapheme-splitter "^1.0.2"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.merge "^4.6.1"
-    lodash.zip "^4.2.0"
-    resq "^1.5.0"
-    rgb2hex "^0.1.0"
-    safe-buffer "^5.2.0"
-    serialize-error "^4.1.0"
-    webdriver "^5.11.0"
 
 webdriverio@^5.11.5:
   version "5.11.5"
