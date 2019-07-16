@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@appjumpstart/launch": "^3.0.0",
-    "@ianwalter/eslint-config-vue": "^1.2.1",
+    "@ianwalter/eslint-config-vue": "^2.0.0",
     "@vue/test-utils": "^1.0.0-beta.16",
     "@wdio/cli": "^5.11.5",
     "@wdio/jasmine-framework": "^5.11.0",
