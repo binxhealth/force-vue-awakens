@@ -117,5 +117,10 @@
       "generator-star-spacing": "off",
       "no-unused-expressions": 0
     }
+  },
+  "renovate": {
+    "extends": [
+      "@ianwalter"
+    ]
   }
 }
