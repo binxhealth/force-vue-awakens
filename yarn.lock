@@ -483,10 +483,10 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@wdio/cli@^5.11.7":
-  version "5.11.7"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.11.7.tgz#ed4af43c037ab68282b8c3bec5bdd23c10758d81"
-  integrity sha512-J8obmv4TDAQoyCAznx4+n/Vs1/mUWx6T/Fn/fhVXQ7MXhLbGAXSiL0gsPDfAuY1mj1eq+EgaHWKqwoHLzTfTwg==
+"@wdio/cli@^5.11.8":
+  version "5.11.8"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.11.8.tgz#27489828c49879274ea212b45f3cf6dcb694d459"
+  integrity sha512-JAinD2ohXMLS3ual8RHBywdYH9mvD12vu7QoJfldMWJtBoDEEn3ao4LVIGB/Z84yA6AAsVqCP0G8lsCMmtrPXA==
   dependencies:
     "@wdio/config" "^5.11.0"
     "@wdio/logger" "^5.11.0"
