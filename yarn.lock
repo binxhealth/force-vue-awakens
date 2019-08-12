@@ -483,10 +483,10 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@wdio/cli@^5.11.13":
-  version "5.11.13"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.11.13.tgz#c183e490071c902ccaba7e587986c5cbb6f8e713"
-  integrity sha512-wR53aRXorcwSC0BtOFGbzi5gWwsjf79vyqleKwtr/H3QXCS9OEsiz/HUGkuQxeWdz/5hdNN3HcYSABurbumm0w==
+"@wdio/cli@^5.11.14":
+  version "5.11.14"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.11.14.tgz#84d8f00aa32350e68e71d6cd31db7a619efa1e74"
+  integrity sha512-CVIcDtttU9Mr6Ooh3BI11dMhpLqI+RDJZE0rZkgRQbgxmNeWm2aaO625VjBxuzTBJg/ebIQ/7iCg8O1a184r/A==
   dependencies:
     "@wdio/config" "^5.11.0"
     "@wdio/logger" "^5.11.0"
@@ -503,7 +503,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^3.2.0"
-    webdriverio "^5.11.13"
+    webdriverio "^5.11.14"
     yargs "^13.2.4"
     yarn-install "^1.0.0"
 
@@ -8944,6 +8944,26 @@ webdriverio@^5.11.13:
   version "5.11.13"
   resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.11.13.tgz#ac56ad395d2906ad53abce78717d287bae54acc0"
   integrity sha512-GTH4aNP4GzuxmeF+CLXIEyfYccXV2hANhqw+cQPE3U0qZ0ir3ZTSTLre90gHVJzY6rcgx0QzIMazuUbNB0kVoA==
+  dependencies:
+    "@wdio/config" "^5.11.0"
+    "@wdio/logger" "^5.11.0"
+    "@wdio/repl" "^5.11.0"
+    archiver "^3.0.0"
+    css-value "^0.0.1"
+    grapheme-splitter "^1.0.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.isobject "^3.0.2"
+    lodash.isplainobject "^4.0.6"
+    lodash.zip "^4.2.0"
+    resq "^1.5.0"
+    rgb2hex "^0.1.0"
+    serialize-error "^4.1.0"
+    webdriver "^5.11.13"
+
+webdriverio@^5.11.14:
+  version "5.11.14"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.11.14.tgz#e745cfc4b212754cfc95b6fa374db171adc4028a"
+  integrity sha512-Tt0eq6VjaJOU93kvjyyLD5uHuz7iYx9VCg52GDwGCSE4hq21m9sEO9VFogvhj2QCgxEIR/+CNPoeMVd9R2kXSg==
   dependencies:
     "@wdio/config" "^5.11.0"
     "@wdio/logger" "^5.11.0"
