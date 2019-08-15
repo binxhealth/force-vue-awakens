@@ -553,10 +553,10 @@
   dependencies:
     "@wdio/config" "^5.12.1"
 
-"@wdio/reporter@^5.11.7":
-  version "5.11.7"
-  resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-5.11.7.tgz#26fe999a09dde82c40bfea12d3cee495b5d4843e"
-  integrity sha512-FC3cbCPwKNLHoqdkti9802Q6D9kchqsQwghw5FwN5WKqK+Qk6GSUGckuZA0rY+oQe7rAJ83RfnaFP1PmwDw8xg==
+"@wdio/reporter@^5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-5.12.1.tgz#8a5d99308bef134092a98cffe87ff8901ba72969"
+  integrity sha512-GC9MuAMYsxSXw9y4jTXMiBA6UYyOep39PsdxzJh/FsgVtQwCjtXoUp2+4ahZOiKxbu4hTvsr9KRxF+jY2O+dqA==
   dependencies:
     fs-extra "^8.0.1"
 
@@ -582,12 +582,12 @@
     fs-extra "^8.0.1"
     selenium-standalone "^6.15.1"
 
-"@wdio/spec-reporter@^5.11.7":
-  version "5.11.7"
-  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-5.11.7.tgz#68218ea7a4add38eed8f37fdb765b0a7e0a7b8b9"
-  integrity sha512-JVz85bL26PJjhZsFQy2ynkMyB96r1Nw4o4lbLUmer0eYycVC25jjekFyp5XE6+NmGSY2PVVz1uWmDamFy5TLdA==
+"@wdio/spec-reporter@^5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-5.12.1.tgz#1c846110fc8f95f05148bdade54f8bf64759a983"
+  integrity sha512-g5PcVB6ITvL2sNMJ+AAzJ4pqDBnNLgzB6HvdT1XjcXu8nKikQjqhzCTlMIAuOT/ZlfvgJnSm8u896RMdX5tfxg==
   dependencies:
-    "@wdio/reporter" "^5.11.7"
+    "@wdio/reporter" "^5.12.1"
     chalk "^2.3.2"
     pretty-ms "^5.0.0"
     table "^5.4.2"
