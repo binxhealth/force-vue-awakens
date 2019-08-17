@@ -43,7 +43,7 @@
     "eslint-plugin-webdriverio": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
-    "node": "^12.8.0",
+    "node": "^12.8.1",
     "url-loader": "^2.1.0",
     "vue-jest": "^3.0.4",
     "vue-loader": "^15.7.1",
