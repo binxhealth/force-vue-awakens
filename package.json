@@ -30,7 +30,7 @@
     "@wdio/spec-reporter": "^5.12.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.2",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
