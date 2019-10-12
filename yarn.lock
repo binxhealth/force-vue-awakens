@@ -6416,10 +6416,10 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node@^12.8.1:
-  version "12.8.1"
-  resolved "https://registry.yarnpkg.com/node/-/node-12.8.1.tgz#037af95afc8d08532d8797c3ab573310221fefa2"
-  integrity sha512-oEBcLagap4lSVPWxZim1hyQ5xsd+3nFbB/dAEmY2hoAgF38hIXRBj1foZRXAqfRXdmUhdMoNGVcTvgTg2i1eQQ==
+node@^12.12.0:
+  version "12.12.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.12.0.tgz#934f1801b3d72887d812092c92a4ed829f290f9d"
+  integrity sha512-O6BktMOYe3MwF7n83L4Nc6/tvlOCYsDntQQegqWUPcH779oQu1krcWPMREUPm8FKSWK7c9LK4Yldk8h3FnSqaw==
   dependencies:
     node-bin-setup "^1.0.0"
 
