@@ -41,7 +41,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-jest": "^22.15.1",
     "eslint-plugin-webdriverio": "^1.0.1",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^4.3.0",
     "jest": "^24.9.0",
     "node": "^12.8.1",
     "url-loader": "^2.1.0",
