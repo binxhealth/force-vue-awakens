@@ -22,7 +22,7 @@
     "@appjumpstart/launch": "^3.0.0",
     "@ianwalter/eslint-config-vue": "^1.2.1",
     "@ianwalter/renovate-config": "^1.1.1",
-    "@vue/test-utils": "^1.0.0-beta.29",
+    "@vue/test-utils": "^1.0.4",
     "@wdio/cli": "^5.12.1",
     "@wdio/jasmine-framework": "^5.12.1",
     "@wdio/local-runner": "^5.12.1",
